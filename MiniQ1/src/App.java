@@ -94,6 +94,7 @@ public class App {
                         if (checkDragon(player.row, player.col, grid) == 0) {
                             System.out.println("GAME OVER!");
                             mov.close();
+                            run = false;
                         }
                     }
                     else if(grid[mrow-1][mcol] == "K"){
@@ -155,6 +156,7 @@ public class App {
                     if (checkDragon(player.row, player.col, grid) == 0) {
                         System.out.println("GAME OVER!");
                         mov.close();
+                        run = false;
                     }
                 }
                 else if(grid[mrow][mcol-1] == "K"){
@@ -274,6 +276,7 @@ public class App {
                         if (checkDragon(player.row, player.col, grid) == 0) {
                             System.out.println("GAME OVER!");
                             mov.close();
+                            run = false;
                         }
                     }
                     else if(grid[mrow][mcol+1] == "K"){
