@@ -129,7 +129,7 @@ public class App {
                             
                         }
                         else{
-                            System.out.println("Invalid Move!");
+                            System.out.println("Closed the door is, the keys must you find!");
                         }
                     }
                     else{
@@ -190,7 +190,7 @@ public class App {
                         run = false;
                     }
                     else{
-                        System.out.println("Invalid Move!");
+                        System.out.println("Closed the door is, the keys must you find!");
                     }
                 }
                 else{
@@ -250,7 +250,7 @@ public class App {
                             run = false;
                         }
                         else{
-                            System.out.println("Invalid Move!");
+                            System.out.println("Closed the door is, the keys must you find!");
                         }
                     }
                     else{
@@ -310,7 +310,7 @@ public class App {
                             run = false;
                         }
                         else{
-                            System.out.println("Invalid Move!");
+                            System.out.println("Closed the door is, the keys must you find!");
                         }
 
                     }
