@@ -1,7 +1,7 @@
 Product Vision:
 
 	Who is the target audience?
-	- People who want to buy/sell any product in our store.
+	- People who want to buy or sell any product in our store.
 
 	Which customer needs can the product satisfy?
 	- A trustworthy and secure shop. 
@@ -10,7 +10,7 @@ Product Vision:
 	- The simplicity and quickness with which we can provide a wide variety of products/goods.
 	
 	Who is competing and how do they perform? (internal, external competitors)
-	- Other selling/buying platforms, very bad comparing to us :)
+	- Other selling/buying platforms, high budget and high maintenance.
 
 	What timeframe and product development budget determine the project?
-	- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	
+	- 12 weeks; ~2000€.	
