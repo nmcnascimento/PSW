@@ -7,7 +7,7 @@ CREATE TABLE Customer (
   username varchar(100) NOT NULL,
   password varchar(100) NOT NULL,
   email varchar(100) NOT NULL UNIQUE,
-  balance float(53, 2) NOT NULL 
+  balance float(53) NOT NULL 
 );
 
 CREATE TABLE Admin (
@@ -18,14 +18,14 @@ CREATE TABLE Admin (
 CREATE TABLE Catalog (
   prodID varchar(50) NOT NULL UNIQUE,
   prodName varchar(100) NOT NULL UNIQUE,
-  prodQty int(2) NOT NULL,
-  prodPrice float(5,2) NOT NULL,
+  prodQty int NOT NULL,
+  prodPrice float(53) NOT NULL,
   prodTag varchar(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE Orders (
   orderID int NOT NULL,
-  orderDate date NOT NULL,
+  orderDate date NOT NULL
 );
 
 
