@@ -23,9 +23,9 @@ CREATE TABLE Catalog (
   prodTag varchar(50) NOT NULL UNIQUE
 );
 
-CREATE TABLE Order (
-  orderID int(2) NOT NULL,
-  orderDate DATE NOT NULL,
-  );
+CREATE TABLE Orders (
+  orderID int NOT NULL,
+  orderDate date NOT NULL,
+);
 
 
