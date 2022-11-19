@@ -1,21 +1,22 @@
 CREATE TABLE visitor (
-  role boolean ,
-  loginStatus boolean
+  username varchar(100) NOT NULL PRIMARY KEY,
+  password varchar(100) NOT NULL,
+  --loginStatus boolean
 );
 
-CREATE TABLE Customer (
-  username varchar(100) NOT NULL,
+CREATE TABLE customer (
+  username varchar(100) NOT NULL REFERENCES visitor(username),
   password varchar(100) NOT NULL,
   email varchar(100) NOT NULL UNIQUE,
   balance float(53) NOT NULL 
 );
 
-CREATE TABLE Admin (
-  username varchar(100) NOT NULL,
+CREATE TABLE admin (
+  username varchar(100) NOT NULL REFERENCES visitor(username),
   password varchar(100) NOT NULL
 );
 
-CREATE TABLE Catalog (
+CREATE TABLE catalog (
   prodID varchar(50) NOT NULL UNIQUE,
   prodName varchar(100) NOT NULL UNIQUE,
   prodQty int NOT NULL,
