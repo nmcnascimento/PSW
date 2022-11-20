@@ -38,14 +38,23 @@ public class connectDB {
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
-            int val = validateLogin("adminu","adminp",conn);
-            if (val == 0){
-                System.out.println("Login success");
-            } else if (val == 1) {
-                System.out.println("Invalid username");
-            } else if (val == 2) {
-                System.out.println("Invalid Password");
+            String nuser = "cust1";
+            String npass = "pass1234";
+            if(registUser(nuser,npass,conn) == 0){
+                System.out.println("Regist done with success!");
+                int val = validateLogin(nuser,npass,conn);
+                if (val == 0){
+                    System.out.println("Login success");
+                } else if (val == 1) {
+                    System.out.println("Invalid username");
+                } else if (val == 2) {
+                    System.out.println("Invalid Password");
+                }
             }
+            else {
+                System.out.println("User already exists!");
+            }
+
 
             //System.out.println("Values: "+values[0]+" "+values[1]);
 
@@ -82,7 +91,7 @@ public class connectDB {
         Function that puts in values the user and password
          */
         System.out.println("Finding "+ user +" in table...");
-        String query = "SELECT * FROM visitor WHERE username = 'adminu';";
+        String query = "SELECT * FROM visitor WHERE username = '"+user+"';";
 
         try {
             Statement s = connection.createStatement();
@@ -118,6 +127,36 @@ public class connectDB {
             System.out.println(e.getMessage());
             return 0;
         }
+    }
+
+    public static int registUser(String user,
+                                  String pass,
+                                  Connection connection){
+        /*
+            Functions returns 0 in case of success
+                              1 in case of unsuccess
+         */
+
+        String query = "INSERT INTO visitor(username, password) VALUES ('"+user+"','"+pass+"');";
+
+        try {
+            System.out.println("Regist new user: "+user);
+            System.out.println("Password: "+pass);
+            String[] values = new String[100];
+            if(find_user_in_table(user,connection,values)==1){
+                return 1;
+            }
+            System.out.println("User not registed aready...begin regist...");
+            Statement s = connection.createStatement();
+            s.executeUpdate(query);
+            s.close();
+            return 0;
+
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+            return 1;
+        }
+
     }
 
 

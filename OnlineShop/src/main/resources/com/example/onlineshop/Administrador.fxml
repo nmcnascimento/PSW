@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.SceneController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0">
          <children>
@@ -25,22 +25,22 @@
                   </Label>
                   <ImageView fitHeight="78.0" fitWidth="182.0" layoutX="29.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../storelogotype.PNG" />
+                        <Image url="@storelogotype.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="84.0" fitWidth="76.0" layoutX="295.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../pencil.png" />
+                        <Image url="@pencil.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="479.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../remove.png" />
+                        <Image url="@remove.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="538.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../private-account.png" />
+                        <Image url="@private-account.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="449.0" layoutY="39.0" text="Administrador">
@@ -49,7 +49,7 @@
                      </font></Label>
                   <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="111.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../add-product.png" />
+                        <Image url="@add-product.png" />
                      </image>
                   </ImageView>
                   <Button alignment="BOTTOM_CENTER" layoutX="72.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchToAdminAddProd" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #35c56c;" text="Adicionar produto" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="435.33333333333337">
@@ -70,7 +70,7 @@
                      <graphic>
                         <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../exit-door.png" />
+                              <Image url="@exit-door.png" />
                            </image>
                         </ImageView>
                      </graphic>

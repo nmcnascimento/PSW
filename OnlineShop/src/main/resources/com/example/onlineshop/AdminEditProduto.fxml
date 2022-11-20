@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="477.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane prefHeight="477.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.SceneController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="423.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="170.0" />
       <Label layoutX="76.0" layoutY="114.0" text="Editar produto" AnchorPane.bottomAnchor="329.3333333333333" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="312.0" AnchorPane.topAnchor="114.0">
@@ -20,12 +20,12 @@
       </Label>
       <ImageView fitHeight="78.0" fitWidth="182.0" layoutX="29.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../storelogotype.PNG" />
+            <Image url="@storelogotype.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="538.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../private-account.png" />
+            <Image url="@private-account.png" />
          </image>
       </ImageView>
       <Label layoutX="449.0" layoutY="39.0" text="Administrador">
@@ -68,7 +68,7 @@
          <graphic>
             <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../arrow.png" />
+                  <Image url="@arrow.png" />
                </image>
             </ImageView>
          </graphic>
@@ -80,7 +80,7 @@
          <graphic>
             <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../exit-door.png" />
+                  <Image url="@exit-door.png" />
                </image>
             </ImageView>
          </graphic>

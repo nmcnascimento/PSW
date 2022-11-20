@@ -1,4 +1,4 @@
-package application;
+package com.example.onlineshop;
 
 import java.io.IOException;
 
