@@ -1,0 +1,19 @@
+
+.label{
+	-fx-font-size:20;
+	-fx-font-family:"Arial";
+	-fx-text-fill:"BLUE";
+	-fx-alignment:center;
+}
+
+
+#userLabel{
+	-fx-font-size:16;
+	-fx-alignment:left;
+}
+
+#userButton{
+	-fx-alignment:center;
+	-fx-text-fill:"RED";
+	
+}
