@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.SceneController">
+   <children>
+      <AnchorPane layoutX="-13.0" layoutY="-7.0" prefHeight="477.0" prefWidth="657.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="337.0" layoutX="178.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" width="450.0" />
+            <Button layoutX="29.0" layoutY="117.0" mnemonicParsing="false" onAction="#switchToTecV" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #055AF9; -fx-text-fill: white;" text="Tecnologia">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="297.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="143.0" />
+            <Button layoutX="29.0" layoutY="182.0" mnemonicParsing="false" onAction="#switchToPapV" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #055AF9; -fx-text-fill: white;" text="Papelaria e Escritório">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="29.0" layoutY="247.0" mnemonicParsing="false" onAction="#switchToCafeV" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: white; -fx-text-fill: #055AF9;" text="Café">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="504.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="556.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="182.0" layoutX="29.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@storelogotype.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="504.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: transparent; " text="Entrar">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="594.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="34.0" prefWidth="36.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@exit-door.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
