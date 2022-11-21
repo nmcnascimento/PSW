@@ -1,18 +1,17 @@
-CREATE TABLE visitor (
+CREATE TABLE suser (
   username varchar(100) NOT NULL PRIMARY KEY,
   password varchar(100) NOT NULL,
-  --loginStatus boolean
 );
 
 CREATE TABLE customer (
-  username varchar(100) NOT NULL REFERENCES visitor(username),
+  username varchar(100) NOT NULL REFERENCES user(username),
   password varchar(100) NOT NULL,
   email varchar(100) NOT NULL UNIQUE,
   balance float(53) NOT NULL 
 );
 
 CREATE TABLE admin (
-  username varchar(100) NOT NULL REFERENCES visitor(username),
+  username varchar(100) NOT NULL REFERENCES user(username),
   password varchar(100) NOT NULL
 );
 

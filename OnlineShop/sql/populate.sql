@@ -10,7 +10,6 @@ VALUES ('nuno','123456','nuno@mail.com',500);
 INSERT INTO porders(porderid, porderdate)
 VALUES(1,'2022-01-01');
 
-INSERT INTO visitor(role, loginstatus)
-VALUES (0,0);   /*first element is to choose from either admin or customer
-                  and the second to verify if the login is done*/
+INSERT INTO suser(username, password)
+VALUES ('userTest','password');
 

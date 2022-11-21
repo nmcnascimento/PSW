@@ -14,7 +14,7 @@
    <children>
       <AnchorPane prefHeight="497.0" prefWidth="390.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutX="130.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToHomeUser" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #0d6efd; -fx-text-fill: white;" text="Entrar" AnchorPane.bottomAnchor="135.00000000000006" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="363.0">
+            <Button layoutX="130.0" layoutY="363.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #0d6efd; -fx-text-fill: white;" text="Entrar" AnchorPane.bottomAnchor="135.00000000000006" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="363.0">
                <font>
                   <Font name="SansSerif Regular" size="15.0" />
                </font></Button>
@@ -39,8 +39,8 @@
                <font>
                   <Font name="SansSerif Regular" size="14.0" />
                </font></Label>
-            <PasswordField layoutX="83.0" layoutY="310.0" prefHeight="25.0" prefWidth="223.0" />
-            <TextField layoutX="83.0" layoutY="249.0" prefHeight="25.0" prefWidth="223.0" />
+            <PasswordField fx:id="pass_label" layoutX="83.0" layoutY="310.0" prefHeight="25.0" prefWidth="223.0" />
+            <TextField fx:id="user_label" layoutX="83.0" layoutY="249.0" prefHeight="25.0" prefWidth="223.0" />
             <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="138.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@user.png" />
